@@ -1,0 +1,10 @@
+{
+  "name": "card-deck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "card-deck.html",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+}

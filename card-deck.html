@@ -1,0 +1,28 @@
+<link rel="import" href="/bower_components/paper-material/paper-material.html">
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<!--
+`<card-deck></card-deck>` 
+@demo demo.html
+-->
+
+<dom-module id="card-deck">
+<template>
+<style>
+  :host {display:inline-block;}
+  paper-material {bottom: 10px;left:10px;background:#fff;height:200px;width:150px}
+</style>
+<paper-material elevation="1" style="top:30px;right:30px">
+  <paper-material elevation="1">
+    <paper-material elevation="1">
+      <content></content>
+    </paper-material>
+  </paper-material>
+</paper-material>
+
+</template>
+</dom-module>
+<script>
+Polymer({
+  is: "card-deck"
+})
+</script>

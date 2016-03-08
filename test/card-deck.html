@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>card-deck</title>
+    <script src="../../webcomponentsjs/webcomponents.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+    <script src="../../test-fixture/test-fixture-mocha.js"></script>
+    <script src="../../iron-test-helpers/mock-interactions.js"></script>
+    <link rel="import" href="../../polymer/polymer.html">
+    <link rel="import" href="../../test-fixture/test-fixture.html">
+    <link rel="import" href="../card-deck.html">
+  </head>
+  <body>
+    <test-fixture id="cardDeck">
+      <template>
+        <card-deck></card-deck> //add attributes
+      </template>
+    </test-fixture>
+    <script>
+      suite('<card-deck>', function () {
+        var cardDeck;
+        setup(function () {
+          cardDeck = fixture('cardDeck');
+        });
+        teardown(function () {
+          //...
+        });
+        suite('basic usage', function () {
+          test('can be triggered with space', function(done) {
+            cardDeck.addEventListener('keydown', function() {
+              done()
+            })
+            MockInteractions.pressSpace(cardDeck)
+          })
+          test('can be clicked', function(done) {
+            cardDeck.addEventListener('click', function() {
+              done()
+            })
+            MockInteractions.tap(cardDeck)
+          })
+        })
+      })
+    </script>
+  </body>
+</html>
