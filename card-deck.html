@@ -7,22 +7,26 @@
 
 <dom-module id="card-deck">
 <template>
-<style>
-  :host {display:inline-block;}
-  paper-material {bottom: 5px;left:5px;background:#fff;height:200px;width:150px}
-</style>
-<paper-material elevation=1 style="top:5px;left:-4px;z-index:-1;margin-right:10px">
-  <paper-material elevation=1>
-    <paper-material elevation=1>
-      <content></content>
+  <style>
+    :host {display:inline-block;}
+    paper-material {bottom: 5px;left:5px;background:#fff}
+  </style>
+  <paper-material elevation="1" style="top:5px;left:-4px;z-index:-1;margin-right:10px;height:{{height}}px;width:{{width}}px">
+    <paper-material elevation="1" style="height:{{height}}px;width:{{width}}px">
+      <paper-material elevation="1" style="height:{{height}}px;width:{{width}}px">
+        <content></content>
+      </paper-material>
     </paper-material>
   </paper-material>
-</paper-material>
 
 </template>
 </dom-module>
 <script>
 Polymer({
   is: "card-deck"
+  properties: {
+    height: {value:200},
+    width: {value:150}
+  }
 })
 </script>
