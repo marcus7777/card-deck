@@ -6,5 +6,9 @@
   "keywords": [
     "polymer",
     "web-components"
-  ]
+  ],
+  "dependencies": {
+    "textfit-div": "Protoss78/textfit-div",
+    "polymer": "*"
+  }
 }
