@@ -9,6 +9,7 @@
   ],
   "dependencies": {
     "textfit-div": "Protoss78/textfit-div",
+    "paper-material": "PolymerElements/paper-material#~1.0.6",
     "polymer": "*"
   }
 }
