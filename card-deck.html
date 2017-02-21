@@ -1,7 +1,7 @@
-<link rel="import" href="../paper-material/paper-material.html">
-<link rel="import" href="../textfit-div/textfit-div.html">
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../textfit-div/textfit-div.html">
 <link rel="import" href="../paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../paper-material/paper-material.html">
 <link rel="import" href="../paper-icon-button/paper-icon-button.html">
 <!--
 `<card-deck></card-deck>` 
@@ -11,19 +11,19 @@
   <template>
     <style>
       :host {
-          display: inline-block
-        }
+        display: inline-block
+      }
       paper-material {
-          bottom:3px;
-          left:3px;
-          background:#fff
-        }
+        bottom:3px;
+        left:3px;
+        background:#fff
+      }
       h3 {
-          font-family: Roboto, Arial, Helvetica, sans-serif;
-          font-weight: 300;
-          position: relative;
-          bottom: 20px;
-        }
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        position: relative;
+        bottom: 20px;
+      }
       paper-toolbar {
         --paper-toolbar-sm-height: 35px;
         --paper-toolbar-height: 35px;
@@ -37,7 +37,7 @@
     </style>
     <paper-material elevation="3" style="margin-right:9px;">
       <paper-material elevation="3">
-        <paper-material elevation="3" style?="background:[[color]]">     
+        <paper-material elevation="3" style="background:[[color]]">     
           <paper-toolbar>
               <div class="title"></div>
               <iron-icon icon="more-vert" on-tap="edit"></iron-icon>
